@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 # from rest_framework import generics
 from rest_framework.views import APIView
 from . models import *
@@ -8,8 +7,8 @@ from rest_framework.response import Response
 
 # Create your views here.
 
-def Main(request):
-    return HttpResponse("Hello")
+def Home(request):
+    return render(request, Home)
 
 
 
