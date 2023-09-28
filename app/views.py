@@ -7,8 +7,8 @@ from rest_framework.response import Response
 
 # Create your views here.
 
-def Home(request):
-    return render(request, Home)
+def home(request):
+    return render(request, 'home.html')
 
 
 
